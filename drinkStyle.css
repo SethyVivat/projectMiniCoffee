@@ -1,0 +1,31 @@
+.food-menu {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+.card {
+  border: 0;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.1rem black;
+  transform: scale(1.1);
+  transition: 0.4s;
+}
+.checkOut-btn {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-weight: 500;
+  width: 150px;
+  background-image: linear-gradient(to right, #ff78f6, #d22c2c);
+  color: white;
+  outline: none;
+}
+.checkOut-btn:hover{
+    transform: scale(1.1);
+    transition: .2s;
+}
