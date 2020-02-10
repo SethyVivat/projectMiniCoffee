@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../drinkStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <title>Foods Layout</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- nav bar section -->
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            href="./addFood.html"
+            style="font-size: 30px; color: #B8B7B7; font-weight: bold;"
+            >Add Foods</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            style="font-size: 30px; color: #B8B7B7; font-weight: bold;"
+            href="../admin/addDrink.html"
+            >Add Drinks</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link active"
+            style="font-size: 30px; color: #9F4F4F; font-weight: bold;"
+            href="#"
+            >Add Users</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link logOut"
+            style="font-size: 30px; color: #B8B7B7; font-weight: bold; position: absolute; right: 10px;"
+            href="../index.html"
+            >Log Out</a
+          >
+        </li>
+      </ul>
+
+
+      <!-- this section is where we divided the screen into two side -->
+      <div class="row">
+        <!-- left side of the screen -->
+        <div class="col-md-6 leftCol text-left food-menu mt-2">
+          <h5>New User Info</h5>
+          <hr style="border: 1px solid black;">
+          <!-- form for input information -->
+          <form>
+            <!-- input user name -->
+            <div class="form-group">
+              <label for="exampleInputEmail1">Username</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter username">
+            </div>
+            <!-- input password -->
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <!-- confirm password -->
+            <div class="form-group">
+              <label for="exampleInputPassword1">Confirm Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+
+            <!-- create btn -->
+            <button type="submit" class="btn btn-primary">Create</button>
+          </form>
+        </div>
+        <!-- right side of the screen -->
+        <div
+          class="col-md-6 rightCol text-center"
+        >
+                <h1>List of the Users</h1>
+                <!-- table that list all users -->
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">id</th>
+                      <th scope="col">Name</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Benjamin John</td>
+                      <td>
+                        <img
+                          src="../img/pencil.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />&nbsp;<img
+                          src="../img/trash.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Sokha Dara</td>
+                      <td>
+                        <img
+                          src="../img/pencil.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />&nbsp;<img
+                          src="../img/trash.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>reaksmey chea</td>
+                      <td>
+                        <img
+                          src="../img/pencil.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />&nbsp;<img
+                          src="../img/trash.png"
+                          alt=""
+                          style="cursor: pointer;"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+        </div>
+      </div>
+    </div>
+
+
+
+    
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

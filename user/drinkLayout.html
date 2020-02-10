@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./drinkStyle.css" />
+    <link rel="stylesheet" href="../drinkStyle.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,11 +19,12 @@
   </head>
   <body>
     <div class="container-fluid">
+      <!-- nav bar section -->
       <ul class="nav nav-tabs">
         <li class="nav-item">
           <a
             class="nav-link"
-            href="./foodLayout.html"
+            href="../user/foodLayout.html"
             style="font-size: 30px; color: #B8B7B7; font-weight: bold;"
             >Foods</a
           >
@@ -40,59 +41,30 @@
             <a
               class="nav-link logOut"
               style="font-size: 30px; color: #B8B7B7; font-weight: bold; position: absolute; right: 10px;"
-              href="./index.html"
+              href="../index.html"
               >Log Out</a
             >
           </li>
       </ul>
       <div class="row">
+        <!-- this section is where i divide the screen into to side, left side and write side -->
+        <!-- left side -->
         <div class="col-md-6 leftCol text-center food-menu">
           <!-- drinks menu -->
           <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link" href="./drinkLayout.html" style="font-size: 20px; color: #B8B7B7; font-weight: bold;">Cool Drinks</a>
+              <a class="nav-link active" href="../user/drinkLayout.html" style="font-size: 20px; color: #9F4F4F; font-weight: bold;">Cool Drinks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./hotDrinks.html" style="font-size: 20px; color: #B8B7B7; font-weight: bold;">Hot Drinks</a>
+              <a class="nav-link" href="../user/hotDrinks.html" style="font-size: 20px; color: #B8B7B7; font-weight: bold;">Hot Drinks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="./frapes.html" style="font-size: 20px; color: #9F4F4F; font-weight: bold;">Frappes</a>
+              <a class="nav-link" href="../user/frapes.html" style="font-size: 20px; color: #B8B7B7; font-weight: bold;">Frappes</a>
             </li>
           </ul>
+          <!-- each modal that show drinks, each of them is btn and is clickable -->
           <div class="row">
             <button
-            type="button"
-            data-toggle="modal"
-            data-target="#exampleModal"
-            style="border: none; outline: none; background: none; margin-top: 25px;"
-          >
-            <div class="col-sm-4">
-              <div class="card" style="width: 16rem; height: 26rem;">
-                <img
-                  src="./img/CARAMEL LATTE.jpg"
-                  class="card-img-top"
-                  alt="..."
-                  style="height: 15rem;"
-                />
-                <div class="card-body">
-                  <h3>Caramel Latte</h3>
-                  <div class="row">
-                      <div class="col-sm-6 justify-content-left">
-                          <p class="card-text">Reg</p>
-                          <p class="card-text">Large</p>
-                          <p class="card-text">Grand</p>
-                        </div>
-                        <div class="col-sm-6 justify-content-right">
-                          <p class="card-text">3.50 USD</p>
-                          <p class="card-text">4.50 USD</p>
-                          <p class="card-text">5.50 USD</p>
-                        </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </button>
-            <button
               type="button"
               data-toggle="modal"
               data-target="#exampleModal"
@@ -101,13 +73,13 @@
               <div class="col-sm-4">
                 <div class="card" style="width: 16rem; height: 26rem;">
                   <img
-                    src="./img/ice amercano.jpg"
+                    src="../img/vanila latte.jpg"
                     class="card-img-top"
                     alt="..."
                     style="height: 15rem;"
                   />
                   <div class="card-body">
-                    <h3 style="font-size: 25px">Americano</h3>
+                    <h3 style="font-size: 25px">VANILLA LATTE</h3>
                     <div class="row">
                         <div class="col-sm-6 justify-content-left">
                             <p class="card-text">Reg</p>
@@ -133,77 +105,13 @@
               <div class="col-sm-4">
                 <div class="card" style="width: 16rem; height: 26rem;">
                   <img
-                    src="./img/vanila latte.jpg"
+                    src="../img/ice amercano.jpg"
                     class="card-img-top"
                     alt="..."
                     style="height: 15rem;"
                   />
                   <div class="card-body">
-                    <h3>Vanila Latte</h3>
-                    <div class="row">
-                        <div class="col-sm-6 justify-content-left">
-                            <p class="card-text">Reg</p>
-                            <p class="card-text">Large</p>
-                            <p class="card-text">Grand</p>
-                          </div>
-                          <div class="col-sm-6 justify-content-right">
-                            <p class="card-text">3.50 USD</p>
-                            <p class="card-text">4.50 USD</p>
-                            <p class="card-text">5.50 USD</p>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </button>
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              style="border: none; outline: none; background: none; margin-top: 25px;"
-            >
-              <div class="col-sm-4">
-                <div class="card" style="width: 16rem; height: 26rem;">
-                  <img
-                    src="./img/hot chocolate.jpg"
-                    class="card-img-top"
-                    alt="..."
-                    style="height: 15rem;"
-                  />
-                  <div class="card-body">
-                    <h3>Hot Chocolate</h3>
-                    <div class="row">
-                        <div class="col-sm-6 justify-content-left">
-                            <p class="card-text">Reg</p>
-                            <p class="card-text">Large</p>
-                            <p class="card-text">Grand</p>
-                          </div>
-                          <div class="col-sm-6 justify-content-right">
-                            <p class="card-text">3.50 USD</p>
-                            <p class="card-text">4.50 USD</p>
-                            <p class="card-text">5.50 USD</p>
-                          </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </button>
-            <button
-              type="button"
-              data-toggle="modal"
-              data-target="#exampleModal"
-              style="border: none; outline: none; background: none; margin-top: 25px;"
-            >
-              <div class="col-sm-4">
-                <div class="card" style="width: 16rem; height: 26rem;">
-                  <img
-                    src="./img/ice green tea.jpg"
-                    class="card-img-top"
-                    alt="..."
-                    style="height: 15rem;"
-                  />
-                  <div class="card-body">
-                    <h3>Green Tea</h3>
+                    <h3>Ice Americano</h3>
                     <div class="row">
                       <div class="col-sm-6 justify-content-left">
                         <p class="card-text">Reg</p>
@@ -220,12 +128,110 @@
                 </div>
               </div>
             </button>
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              style="border: none; outline: none; background: none; margin-top: 25px;"
+            >
+              <div class="col-sm-4">
+                <div class="card" style="width: 16rem; height: 26rem;">
+                  <img
+                    src="../img/ice green tea.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    style="height: 15rem;"
+                  />
+                  <div class="card-body">
+                    <h3>Ice Green Tea</h3>
+                    <div class="row">
+                        <div class="col-sm-6 justify-content-left">
+                            <p class="card-text">Reg</p>
+                            <p class="card-text">Large</p>
+                            <p class="card-text">Grand</p>
+                          </div>
+                          <div class="col-sm-6 justify-content-right">
+                            <p class="card-text">3.50 USD</p>
+                            <p class="card-text">4.50 USD</p>
+                            <p class="card-text">5.50 USD</p>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              style="border: none; outline: none; background: none; margin-top: 25px;"
+            >
+              <div class="col-sm-4">
+                <div class="card" style="width: 16rem; height: 26rem;">
+                  <img
+                    src="../img/ice green tea.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    style="height: 15rem;"
+                  />
+                  <div class="card-body">
+                    <h3>Ice Green Tea</h3>
+                    <div class="row">
+                        <div class="col-sm-6 justify-content-left">
+                            <p class="card-text">Reg</p>
+                            <p class="card-text">Large</p>
+                            <p class="card-text">Grand</p>
+                          </div>
+                          <div class="col-sm-6 justify-content-right">
+                            <p class="card-text">3.50 USD</p>
+                            <p class="card-text">4.50 USD</p>
+                            <p class="card-text">5.50 USD</p>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </button>
+            <button
+              type="button"
+              data-toggle="modal"
+              data-target="#exampleModal"
+              style="border: none; outline: none; background: none; margin-top: 25px;"
+            >
+              <div class="col-sm-4">
+                <div class="card" style="width: 16rem; height: 26rem;">
+                  <img
+                    src="../img/ice lemon tea.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    style="height: 15rem;"
+                  />
+                  <div class="card-body">
+                    <h3>Ice Lemon Tea</h3>
+                    <div class="row">
+                        <div class="col-sm-6 justify-content-left">
+                            <p class="card-text">Reg</p>
+                            <p class="card-text">Large</p>
+                            <p class="card-text">Grand</p>
+                          </div>
+                          <div class="col-sm-6 justify-content-right">
+                            <p class="card-text">3.50 USD</p>
+                            <p class="card-text">4.50 USD</p>
+                            <p class="card-text">5.50 USD</p>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </button>
           </div>
         </div>
+        <!-- right side -->
         <div
           class="col-md-6 rightCol text-center"
         >
                 <h1>Orders Information</h1>
+                <!-- table that show the orders information -->
                 <table class="table">
                   <thead>
                     <tr>
@@ -246,11 +252,11 @@
                       <td>3.95 USD</td>
                       <td>
                         <img
-                          src="./img/pencil.png"
+                          src="../img/pencil.png"
                           alt=""
                           style="cursor: pointer;"
                         />&nbsp;<img
-                          src="./img/trash.png"
+                          src="../img/trash.png"
                           alt=""
                           style="cursor: pointer;"
                         />
@@ -264,11 +270,11 @@
                       <td>3.50 USD</td>
                       <td>
                         <img
-                          src="./img/pencil.png"
+                          src="../img/pencil.png"
                           alt=""
                           style="cursor: pointer;"
                         />&nbsp;<img
-                          src="./img/trash.png"
+                          src="../img/trash.png"
                           alt=""
                           style="cursor: pointer;"
                         />
@@ -282,11 +288,11 @@
                       <td>3.50 USD</td>
                       <td>
                         <img
-                          src="./img/pencil.png"
+                          src="../img/pencil.png"
                           alt=""
                           style="cursor: pointer;"
                         />&nbsp;<img
-                          src="./img/trash.png"
+                          src="../img/trash.png"
                           alt=""
                           style="cursor: pointer;"
                         />
@@ -299,13 +305,15 @@
 
                 
                 <hr style="border: 2px solid black;">
+                <!-- cost total section -->
                 <p class="d-flex justify-content-end">Total: 11.00 USD</p>
-                <a href="./OrdersInfo.html">
+                <a href="../OrdersInfo.html">
                   <button class="checkOut-btn">Check Out</button>
                 </a>
         </div>
 
         <!-- modal -->
+        <!-- this modal is triggered whenever you click on each of the item("food, or drink") -->
         <div
           class="modal fade"
           id="exampleModal"
@@ -317,7 +325,7 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Options</h5>
                 <button
                   type="button"
                   class="close"
@@ -373,7 +381,7 @@
                     <div class="input-group-text">Sugar Level</div>
                   </div>
                   <input
-                    type="text"
+                    type="number"
                     class="form-control"
                     id="inlineFormInputGroupUsername2"
                     placeholder="type here"
@@ -381,6 +389,7 @@
                 </div>
               </div>
               <div class="modal-footer">
+                <!-- cancel btn -->
                 <button
                   type="button"
                   class="btn btn-secondary"
@@ -388,6 +397,7 @@
                 >
                   cancel
                 </button>
+                <!-- confirm btn -->
                 <button
                   type="button"
                   class="btn btn-primary"
@@ -402,6 +412,9 @@
       </div>
     </div>
 
+
+
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
